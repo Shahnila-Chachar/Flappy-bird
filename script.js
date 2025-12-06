@@ -1,6 +1,6 @@
 let board;
 let boardwidth = 1500;
-let boardheight = 700;
+let boardheight = 640;
 let context;
 
 let birdwidth = 54;
