@@ -1,10 +1,10 @@
 let board;
-let boardwidth = 360;
+let boardwidth = 1500;
 let boardheight = 640;
 let context;
 
-let birdwidth = 34;
-let birdheight = 24;
+let birdwidth = 54;
+let birdheight = 34;
 let birdx = boardwidth/8;
 let birdy = boardheight/2;
 let birdimage;
