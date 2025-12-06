@@ -22,7 +22,12 @@ let pipeheight = 512;
 let pipex = boardwidth;
 let pipey = 0;
 
+let topPipeimage;
+let bottomPipeimage;
 
+let velocityY = 0;
+let velocityX = -2;
+let 
 
 window.onload = function() {
     board = document.getElementById("board");
@@ -62,6 +67,7 @@ function update() {
     }
 function placePipes() {
     let randompipeY = pipey - pipeheight/4 - Math.random() * (pipeheight/2);
+    let openingspace = birdheight * 6;
     let toppipe = {
         image: topPipeimage,
         x: pipex,
@@ -71,4 +77,14 @@ function placePipes() {
         passed: false
     }
     pipes.push(toppipe);
+
+    let bottompipe = {
+        image: bottomPipeimage,
+        x: pipex,
+        y: randompipeY + pipeheight + openingspace,
+        width: pipewidth,
+        height: pipeheight,
+        passed: false
+    }
+    pipes.push(bottompipe);
     }
